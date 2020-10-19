@@ -1,9 +1,15 @@
 import React from 'react' // get the React object from the react module
 
-function Search () {
+function Search ({handleInput, search}) {
     return (
         <section className="search-box-wrapper">
-            <input type="text" placeholder="Search movie database" className="search-box"></input>
+            <input 
+                type="text" 
+                placeholder="Search movie database" 
+                className="search-box"
+                onChange={handleInput}
+                onKeyPress={search}>
+            </input>
         </section>
     )
 }
