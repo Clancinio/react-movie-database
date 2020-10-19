@@ -12,7 +12,7 @@ body{
 }
 
 header{
-  padding: 50px 15px 0;
+  padding: 50px 15px 25px;
 }
 
 h1{
@@ -22,4 +22,37 @@ h1{
   text-align: center;
 }
 
+main{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: crimson;
+}
+
+section{
+  padding: 20px;
+}
+
+input{
+  border: none;
+  outline: none;
+  background: none;
+}
+/* Seach Bar*/
+
+.search-box{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #EEE;
+  border-radius: 10px;
+  color: #53565A;
+  font-size: 20px;
+  font-weight: 300;
+  transform: 0.4;
+}
+
+.search-box:focus{
+  box-shadow: 0px 0px 4px 2px rgb(33, 33, 77);
+}
 
