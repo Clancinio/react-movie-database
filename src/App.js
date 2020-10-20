@@ -1,7 +1,10 @@
 import React from 'react';
-import Search from "./Components/Search";
 import { useState } from 'react';
 import axios from 'axios';
+
+import Search from "./Components/Search";
+import Results from "./Components/Results";
+import Result from "./Components/Result";
 
 function App() {
   const [state, setState] = useState({
@@ -41,6 +44,7 @@ function App() {
       </header>
       <main>
         <Search handleInput = { handleInput } search={ search }/>
+        <Results results = { state.results } />
       </main>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react' // get the React object from the react module
+import Result from './Result';
 
 function Results ({results}) {
     return (
