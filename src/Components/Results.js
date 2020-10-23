@@ -1,14 +1,15 @@
-import React from 'react' // get the React object from the react module
-import Result from './Result';
+import React from 'react'
 
-function Results ({results}) {
-    return (
-        <section className="results">
-            {results.map(result => (
-                <Results result={ result } />
-            ))}
-        </section>
-    )
+import Result from './Result'
+
+function Results ({ results }) {
+	return (
+		<section className="results">
+			{results.map(result => (
+				<Result key={result.imdID} result={result} />
+			))}
+		</section>
+	)
 }
 
 export default Results // expose the HelloWorld component to other modules

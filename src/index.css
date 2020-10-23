@@ -56,3 +56,7 @@ input{
   box-shadow: 0px 0px 4px 2px rgb(33, 33, 77);
 }
 
+.results{
+  background-color: darkgrey;
+}
+

@@ -4,7 +4,6 @@ import axios from 'axios';
 
 import Search from "./Components/Search";
 import Results from "./Components/Results";
-import Result from "./Components/Result";
 
 function App() {
   const [state, setState] = useState({
@@ -17,13 +16,13 @@ function App() {
 
   const search = (e) => {
     if(e.key == "Enter") {
-      axios(apiurl + "&s=" + state.s).then((data => {
+      axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
 
         setState(prevState => {
           return {...prevState, results: results}
         })
-      }))
+      })
     }
   }
 

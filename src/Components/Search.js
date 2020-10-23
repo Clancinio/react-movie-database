@@ -11,7 +11,7 @@ function Search ({handleInput, search}) {
                 onKeyPress={search}>
             </input>
         </section>
-    )
+    );
 }
 
 export default Search // expose the HelloWorld component to other modules
