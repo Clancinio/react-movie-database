@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import Search from "./Components/Search";
 import Results from "./Components/Results";
+const api_key = process.env.REACT_APP_OMDB_API_KEY;
+
 
 function App() {
   const [state, setState] = useState({
@@ -12,10 +14,10 @@ function App() {
     seleted: {}
   });
 
-  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=22e4fee5";
+  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=" + api_key;
 
   const search = (e) => {
-    if(e.key == "Enter") {
+    if(e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
 
