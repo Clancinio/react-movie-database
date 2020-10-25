@@ -91,3 +91,73 @@ input{
   color: #445565;
 }
 
+/* pop-up */
+
+.pop-up{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #445565;
+  overflow: scroll;
+}
+
+.pop-up .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
+
+.pop-up .content h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.pop-up .content h2 span{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.pop-up .content .rating{
+  margin-bottom: 30px;
+}
+
+.pop-up .content .plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15 30px;
+}
+
+.pop-up .content .plot{
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0 15px;
+}
+
+.pop-up .content .plot p{
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.pop-up .content .close{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.pop-up .content .close:hover{
+  background-color: #222222;
+}
