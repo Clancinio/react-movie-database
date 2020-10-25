@@ -35,7 +35,23 @@ function App() {
     setState(prevState => {
       return { ...prevState, s: s}
     });
+  }
 
+  // handle pop-up
+  const openPopup = id => {
+      axios(apiurl + "%id").then(({ data }) => {
+        let result = data;
+
+        setState(prevState => {
+          return { ...prevState, selected: result}
+      });
+    });
+  }
+
+  const closePopup = () => {
+      setState(prevState => {
+        return { ...prevState, selected: {}}
+      });
   }
 
   return (
